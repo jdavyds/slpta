@@ -13,7 +13,7 @@ export default function NumberInput({ name, placeholder, value, setValue }) {
 
   return (
     <label className="flex flex-col gap-2">
-      <span className="font-semibold">{name}</span>
+      <span className="text-sm md:text-base font-semibold">{name}</span>
       <div className="relative">
         <input
           type="number"

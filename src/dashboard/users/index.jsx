@@ -97,9 +97,9 @@ const users = [
 ];
 export default function Index() {
   return (
-    <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-5">
-      <div className="flex justify-between items-center px-5 py-3">
-        <b className="text-xl font-medium">Drivers</b>
+    <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-3 md:p-5">
+      <div className="flex justify-between flex-wrap items-center md:px-5 py-3 gap-3">
+        <b className="md:text-xl font-medium">Drivers</b>
         <label className="relative">
           <input
             type="text"
@@ -149,7 +149,10 @@ export default function Index() {
           </thead>
           <tbody className="font-[400]">
             {users.map((user, index) => (
-              <tr className="odd:bg-[#F4F4F4] border-b border-[#E6EDFF]" key={index}>
+              <tr
+                className="odd:bg-[#F4F4F4] border-b border-[#E6EDFF]"
+                key={index}
+              >
                 <td className="py-5 text-center align-middle">{user.name}</td>
                 <td className="py-5 text-center align-middle">
                   <span>{user.email}</span>

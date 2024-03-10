@@ -25,10 +25,10 @@ export default function DropBtn({ items, setSelected, selected }) {
   useOnHoverOutside(dropdownRef, closeHoverMenu);
 
   return (
-    <div className="w-32 h-fit font-medium relative" ref={dropdownRef}>
+    <div className="w-32 h-fit relative" ref={dropdownRef}>
       <div
         onClick={() => setOpen(!open)}
-        className={`bg-inherit w-full border px-4 h-10 flex gap-2 items-center capitalize justify-between rounded-lg ${
+        className={`bg-inherit text-sm md:text-base w-full border px-4 h-10 flex gap-2 items-center capitalize justify-between rounded-lg ${
           !selected ? "text-[#7C7C7C]" : ""
         }`}
       >

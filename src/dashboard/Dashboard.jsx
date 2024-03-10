@@ -47,8 +47,8 @@ export default function Dashboard() {
         </ul>
       </aside>
       <section className="overflow-y-scroll snap min-h-screen w-full">
-        <header className="px-5 md:pl-10 md:pr-20 py-2 md:py-4 flex justify-end items-center min-h-fit z-10 gap-10">
-          <div className="md:hidden" onClick={() => setOpen(!open)}>
+        <header className="px-5 md:pl-10 md:pr-20 py-2 md:py-4 flex justify-end items-center min-h-fit z-10 gap-5 md:gap-10">
+          <div className="md:hidden mr-auto" onClick={() => setOpen(!open)}>
             <FaBars className="text-xl" />
           </div>
           <Drop
@@ -84,8 +84,8 @@ export default function Dashboard() {
             Main={() => (
               <div className="flex gap-3 items-center ">
                 <img src={user} alt="" className="object-contain" />
-                <span className="">Demo Admin</span>
-                <FaChevronDown />
+                <span className="hidden md:block">Demo Admin</span>
+                <FaChevronDown className="hidden md:block" />
               </div>
             )}
             Dropdown={() => (

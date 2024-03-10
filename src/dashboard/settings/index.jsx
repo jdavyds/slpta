@@ -10,12 +10,12 @@ export default function Index() {
 
   return (
     <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-5">
-      <div className="flex justify-between items-center px-5 py-3">
-        <b className="text-2xl md:text-3xl font-medium">Settings</b>
+      <div className="flex justify-between items-center md:px-5 py-3">
+        <b className="text-xl md:text-3xl font-medium">Settings</b>
       </div>
 
-      <form className="p-5 md:p-20 flex flex-col gap-10">
-        <div className="flex flex-col md:grid grid-cols-3 gap-10 w-full">
+      <form className="md:p-20 flex flex-col gap-10">
+        <div className="flex flex-col md:grid grid-cols-3 gap-5 md:gap-10 w-full">
           <NumberInput
             name="Rate per KM"
             placeholder="Enter the rate per KM"

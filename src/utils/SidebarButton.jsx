@@ -39,7 +39,7 @@ const SideBarButton = (props) => {
                   alt="dashboardIcon"
                   className="transition-all ease-in-out duration-200 h-8 w-8"
                 />
-                <p className="text-lg md:text-xl">{props.name}</p>
+                <p className="text-sm md:text-xl">{props.name}</p>
                 {props.dropdown && (
                   <img
                     className={`ml-auto transition-all ease-in-out duration-300 ${
@@ -74,7 +74,7 @@ const SideBarButton = (props) => {
                   alt="dashboardIcon"
                   className="transition-all ease-in-out duration-200 h-8 w-8"
                 />
-                <p className="text-lg md:text-xl">{props.name}</p>
+                <p className="text-sm md:text-xl">{props.name}</p>
               </div>
             </button>
           </NavLink>

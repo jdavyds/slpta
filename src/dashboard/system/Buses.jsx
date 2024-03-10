@@ -70,9 +70,9 @@ const buses = [
 export default function Buses() {
   const [showModal, setShowModal] = useState(false);
   return (
-    <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-5 flex flex-col gap-5">
-      <div className="flex justify-between items-center px-5 py-3">
-        <b className="text-xl font-medium">Buses</b>
+    <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-5">
+      <div className="flex justify-between items-center md:px-5 py-3 gap-4">
+        <b className="text-xl md:text-3xl font-medium">Buses</b>
         <label className="relative md:w-2/3">
           <input
             type="text"

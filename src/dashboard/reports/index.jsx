@@ -30,9 +30,9 @@ export default function Index() {
   ];
 
   return (
-    <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-5">
-      <div className="flex justify-between items-center px-5 py-3">
-        <b className="text-xl font-medium">Time Table</b>
+    <main className="w-full border border-[#E6EDFF] border-opacity-50 rounded-xl p-3 md:p-5">
+      <div className="flex justify-between flex-wrap items-center md:px-5 py-3 gap-3">
+        <b className="md:text-xl font-medium">Time Table</b>
         <label className="relative md:w-2/3">
           <input
             type="text"
@@ -42,7 +42,7 @@ export default function Index() {
           <FaSearch className="absolute font-light text-primary left-3 top-1/2 -translate-y-1/2" />
         </label>
       </div>
-      <nav className="flex items-center gap-3 rounded border border-opacity-20 w-fit text-sm">
+      <nav className="flex flex-wrap items-center gap-3 rounded border border-opacity-20 w-fit text-sm">
         {cases.map((item, index) => (
           <button
             key={index}
@@ -129,11 +129,18 @@ export default function Index() {
             {reports
               .filter((report) => report.type === active)
               .map((report, index) => (
-                <tr className="odd:bg-[#F4F4F4] border-b border-[#E6EDFF]" key={index}>
+                <tr
+                  className="odd:bg-[#F4F4F4] border-b border-[#E6EDFF]"
+                  key={index}
+                >
                   {Object.entries(report)
                     .filter(([key]) => key !== "type")
                     .map(([key, value], i) => (
-                      <td className="py-5 text-center align-middle" key={i} name={key}>
+                      <td
+                        className="py-5 text-center align-middle"
+                        key={i}
+                        name={key}
+                      >
                         {value}
                       </td>
                     ))}
